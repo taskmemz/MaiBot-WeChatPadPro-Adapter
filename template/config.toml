@@ -1,0 +1,29 @@
+# WeChatPadPro 适配器配置模板
+# 复制为 config.toml 并按实际情况修改
+
+[plugin]
+enabled = true
+# 配置版本号（勿改）
+config_version = "1"
+
+[wechatpad_server]
+# WeChatPadPro HTTP API 地址（含协议与端口）
+wechatpad_url = "http://127.0.0.1:1238"
+# WeChatPadPro WebSocket 推送地址（自动拼接 /GetSyncMsg?key=<token>）
+wechatpad_ws = "ws://127.0.0.1:1238"
+# 服务端 ADMIN_KEY（无 token 时自动申请，二者填其一即可）
+admin_key = ""
+# 直接指定 token（优先于 admin_key）
+token = ""
+# 连接标识，多实例时区分
+connection_id = "default"
+# 未登录时扫码状态轮询间隔（秒）
+login_check_interval = 30
+
+[filters]
+ignore_self_message = true
+ignore_official_account = true
+private_whitelist = []
+private_blacklist = []
+group_whitelist = []
+group_blacklist = []
