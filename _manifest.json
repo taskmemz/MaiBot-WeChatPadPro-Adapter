@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "name": "WeChatPadPro 微信适配器",
+  "description": "通过 WeChatPadPro 协议接入微信个人号，支持文本、图片、语音、表情、引用等消息收发，需自行部署 WeChatPadPro 服务端。",
+  "author": {
+    "name": "taskmemz",
+    "url": "https://github.com/taskmemz"
+  },
+  "license": "GPL-v3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/taskmemz/MaiBot-WeChatPadPro-Adapter",
+    "homepage": "https://github.com/taskmemz/MaiBot-WeChatPadPro-Adapter",
+    "documentation": "https://github.com/taskmemz/MaiBot-WeChatPadPro-Adapter",
+    "issues": "https://github.com/taskmemz/MaiBot-WeChatPadPro-Adapter/issues"
+  },
+  "host_application": {
+    "min_version": "1.2.0",
+    "max_version": "1.3.99"
+  },
+  "sdk": {
+    "min_version": "2.5.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [],
+  "capabilities": [
+    "chat.open_session"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": [
+      "zh-CN",
+      "en-US"
+    ]
+  },
+  "id": "taskmemz.wechatpadpro-adapter",
+  "plugin_type": "adapter"
+}
